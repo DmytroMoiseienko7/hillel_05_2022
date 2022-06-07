@@ -1,0 +1,20 @@
+name: Quality checker
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setuppython@v3
+        with:
+              python-version: '3.8.10'
+      - name: Flake8
+        run: flake ./
+      - name: Isort
+        run: isort --check-only ./
+      - name: Flake8
+        run: black --check ./
