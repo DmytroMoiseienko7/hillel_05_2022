@@ -13,9 +13,8 @@ def player_update(num, players, name, age):
                 updated_player = player.update({"name": name, "age": age})
         players.append(updated_player)
         del players[-1]
-        print(players)
     else:
-        print("No player with such number")
+        print("> -> -> No player with such number <- <- <-")
 
 
 def repr_players(players, my_sort=True, my_key="number") -> None:
@@ -67,7 +66,7 @@ def main():
     add_player(num=17, name="Bob", age=39)
     remove_player(players=team, num=17)
 
-    repr_players(team, my_key="name")
+    repr_players(team)
 
 
 if __name__ == "__main__":
