@@ -10,11 +10,10 @@ def player_update(num, players, name, age):
     if num in my_team:
         for player in players:
             if player["number"] == num:
-                updated_player = player.update({"name": name, "age": age})
-        players.append(updated_player)
-        del players[-1]
+                result = player.update({"name": name, "age": age})
     else:
-        print("> -> -> No player with such number <- <- <-")
+        result = print("> -> -> No player with such number <- <- <-")
+    return result
 
 
 def repr_players(players, my_sort=True, my_key="number") -> None:
