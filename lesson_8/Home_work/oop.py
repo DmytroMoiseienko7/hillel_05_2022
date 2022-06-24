@@ -23,9 +23,7 @@ def get_shape() -> Shape:
     This function should return any instance of a Shape class
     In our example it is Rectangle or Circle
     """
-    circle = Circle
-    rectangle = Rectangle
-    options = [circle, rectangle]
+    options = [Circle, Rectangle]
     return choice(options)
 
 
