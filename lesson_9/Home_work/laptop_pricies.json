@@ -1,0 +1,7 @@
+[
+{"market": "UA", "currency": "UAH", "make_price":[{"name": "HP", "price": 3500}, {"name":"DELL", "price": 5000}, {"name":"ASUS", "price": 7000}]},
+{"market": "PL", "currency": "PLN", "make_price":[{"name": "HP", "price": 1200}, {"name":"DELL", "price": 2700}, {"name":"ASUS", "price": 5500}]},
+{"market": "GB", "currency": "GBP", "make_price":[{"name": "HP", "price": 3000}, {"name":"DELL", "price": 1000}, {"name":"ASUS", "price": 3000}]},
+{"market": "US", "currency": "USD", "make_price":[{"name": "HP", "price": 3500}, {"name":"DELL", "price": 1100}, {"name":"ASUS", "price": 3500}]},
+{"market": "DE", "currency": "EUR", "make_price":[{"name": "HP", "price": 3500}, {"name":"DELL", "price": 1050}, {"name":"ASUS", "price": 3300}]}
+]
